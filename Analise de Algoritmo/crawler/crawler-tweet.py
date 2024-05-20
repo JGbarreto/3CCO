@@ -9,18 +9,10 @@ def get_tweets(query, num_tweets):
     # Configurações do Selenium
     driver = webdriver.Chrome()  # Você precisa ter o ChromeDriver instalado
     driver.get(f"https://twitter.com/search?q={query}&src=typed_query&lang=pt")
-    time.sleep(5)  # Espera alguns segundos para a página carregar
-    pyautogui.click(1497,778)
-    pyautogui.typewrite('joao.conceicao@sptech.school')
-    print(pyautogui.position())
     time.sleep(10)  # Espera alguns segundos para a página carregar
-    print(pyautogui.position())
-    time.sleep(10)  # Espera alguns segundos para a página carregar
-    print(pyautogui.position())
-    time.sleep(10)  # Espera alguns segundos para a página carregar
-    print(pyautogui.position())
-    time.sleep(10)  # Espera alguns segundos para a página carregar
-    print(pyautogui.position())
+    driver.find_element(By.XPATH, 
+                        '//*[@id="react-root"]/div/div/div/main/div/div/div/div[2]/div[2]/div/div[4]/label/div/div[2]/div/input')#.send_keys("joao.conceicao@sptech.school")
+   
     
     
     # Rolar a página para baixo para carregar mais tweets
