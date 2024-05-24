@@ -11,7 +11,7 @@ from azure.iot.device import IoTHubDeviceClient, Message
 #     'database': 'sensores',
 #     'port': '3306',
 # }
-conn_str = "HostName=hub-g2.azure-devices.net;DeviceId=tds-sensor;SharedAccessKey=ZMrvYHdAIyPJ0W2ghOKXaZMH0GoeetMwPAIoTP7qSb4="
+conn_str = "HostName=iot-hub-g2.azure-devices.net;DeviceId=tds-sensor;SharedAccessKey=cXpMj5UVaTAX7yebzkfNaUqR8vV8z57BcAIoTJz6iJA="
 client = IoTHubDeviceClient.create_from_connection_string(conn_str)
 
 # connection = mysql.connector.connect(**config)
